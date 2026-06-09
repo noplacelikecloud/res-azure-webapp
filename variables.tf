@@ -30,7 +30,7 @@ variable "service_plan" {
 variable "container" {
   description = "Container image to host. Defaults to the Open WebUI image on GHCR."
   type = object({
-    image        = optional(string, "ghcr.io/open-webui/open-webui:main")
+    image        = optional(string, "open-webui/open-webui:main")
     registry_url = optional(string, "https://ghcr.io")
   })
   default = {}
